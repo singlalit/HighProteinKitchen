@@ -4,27 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - HighProteinKitchen</title>
-    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="HighProteinKitchen - Explore delicious high-protein recipes for a healthy lifestyle.">
-<meta name="keywords" content="high protein recipes, healthy food, bodybuilding meals, protein diet, fitness food">
-<meta name="author" content="HighProteinKitchen">
-<meta property="og:title" content="HighProteinKitchen - High Protein Recipes">
-<meta property="og:description" content="Find high-protein recipes for fitness, muscle gain, and a healthy lifestyle.">
-<meta property="og:image" content="images/soya-tikki.jpg">
-<meta property="og:url" content="https://yourwebsite.com">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index, follow">
+    <meta name="keywords" content="high protein recipes, healthy food, bodybuilding meals, protein diet, fitness food">
+    <meta name="author" content="HighProteinKitchen">
+    <meta property="og:title" content="HighProteinKitchen - High Protein Recipes">
+    <meta property="og:description" content="Find high-protein recipes for fitness, muscle gain, and a healthy lifestyle.">
+    <meta property="og:image" content="images/soya-tikki.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+        header .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #e65c00;
+        }
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
 
+.logo img {
+    height: 50px; /* Adjust size as needed */
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+    </style>
 </head>
 <body>
 
-    <!-- Include Header -->
     <header>
         <div class="logo">
             <a href="index.html">
                 <img src="images/logo.png" alt="HighProteinKitchen Logo">
             </a>
+            <h1>HighProteinKitchen</h1>
         </div>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,8 +134,15 @@
 
     <main>
         <h1>Contact Us</h1>
-        <p>If you have any questions, suggestions, or business inquiries, feel free to reach out.</p>
+        <p>Have questions, suggestions, or business inquiries? Reach out to us!</p>
         <p>Email: <a href="mailto:example@highproteinkitchen.com">example@highproteinkitchen.com</a></p>
+
+        <form action="submit-form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </main>
 
 </body>
