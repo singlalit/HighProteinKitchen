@@ -271,3 +271,55 @@ th {
     background: #cc5500;
 }
 
+/* beetroot salad recipe */
+.recipe-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.recipe-container h2 {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 28px;
+}
+
+.recipe-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-container ul, .recipe-container ol {
+    margin-left: 20px;
+}
+
+.recipe-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.recipe-container table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.recipe-container th, td {
+    padding: 10px;
+}
+
+.recipe-container .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.recipe-container .back-button:hover {
+    background-color: #b71c1c;
+}
